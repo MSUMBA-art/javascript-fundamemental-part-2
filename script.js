@@ -51,3 +51,18 @@ const calculateAge2 = function (birthYear) {
 const age2 = calculateAge2(1983);
 
 console.log(age1, age2);
+
+// ===== arrow function ==== 
+const calculateAge3 = birthYear => 2022 - birthYear;
+const age3 = calculateAge3(1983);
+console.log(age3);
+
+const yearsUntilRetire =( birthYear, firstName) => {
+    const age = 2022 - birthYear;
+    const retirement = 75 - age;
+    // return retirement;
+    return `${firstName} retires in ${retirement} years`
+}
+
+console.log(yearsUntilRetire(1983, "Alexander"));
+console.log(yearsUntilRetire(1990, "JIM"));
